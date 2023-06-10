@@ -7,9 +7,6 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-/* Missing: Attribute selector, Pseudo-element selector, Child combinator
-   Direct sibling combinator, General sibling combinator */
-
 /* basic elements */
 /* Type selector */
 html {
@@ -49,6 +46,11 @@ p {
 	margin-top: 0; 
 	text-align: justify;
 	}
+
+/* Psuedo element selector */
+p::first-letter {
+	font-weight: bold;
+}
 
 h3 { 
 	font-family: 'Yatra One', cursive;
@@ -106,6 +108,10 @@ header h1 {
 	padding: 0;
 	}
 
+header h1:hover {
+	color: #E9FAE3;
+}
+
 header h2 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 3rem;
@@ -121,11 +127,26 @@ header {
 	height: 20vh;
 	background-image: url("../assets/paradisebeach1.jpg");
 	background-size: cover;
+	opacity: 80%;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+	font-weight: lighter;
 }
 
 /* Id selector */
 #zen-summary {
 	background-color: rgba(255,255,255, .1);
+}
+
+#zen-summary:hover {
+	filter: drop-shadow(5px 5px 5px #0e0e0e);
+}
+
+/* Attribute selector */
+.zen-submit a[target] {
+	text-decoration: underline;
 }
 
 .summary {
@@ -150,6 +171,11 @@ header {
 	margin: 0;
 	}
 
+/* Direct sibling combinator */
+.benefits h3 + p {
+	font-weight: bold;
+}
+
 footer { 
 	text-align: center; 
 	}
@@ -159,72 +185,86 @@ footer a:link, footer a:visited {
 	}
 
 .sidebar {
-	margin-left: 600px; 
+	margin-left: 90vh;
 	position: absolute;
 	top: 0;
 	right: 0;
 	}
 
-.sidebar .wrapper { 
+/* Child combinator */
+.sidebar > .wrapper {
 	font: 0.8rem verdana, sans-serif;
-	background: transparent url('../assets/sidebar2.jpg') no-repeat center center;
-	margin-top: 10vh;
+	background: transparent url('../assets/jungle1.jpg') no-repeat center center;
+	height:80vh;
 	width: 10vw;
-	padding: 1%;
+	padding: 0 1% 0 1%;
 	border:solid #444140;
 	border-radius: 3px;
 	border-collapse: collapse;
-	}
+	position: fixed;
+	top: 10vh;
+	right: 0;
+	overflow: auto;
+}
 
 .sidebar h3.select { 
 	font-family: 'Island Moments', cursive;
 	font-size: 2rem;
-	color: #0e0e0e;
+	color: #fefefe;
 	margin: 10px 0 5px 0;
 	width: 100%;
 	height: 100%;
-
+	text-decoration: underline;
 	}
 
 .sidebar h3.archives { 
 	font-family: 'EB Garamond', serif;
 	font-size: 1rem;
-	color: #0e0e0e;
+	color: #fefefe;
 	margin: 25px 0 5px 0;
+	text-decoration: underline;
 	}
 
 .sidebar h3.resources {
 	font-family: 'EB Garamond', serif;
 	font-size: 1rem;
-	color: #0e0e0e;
+	color: #fefefe;
 	margin: 25px 0 5px 0;
+	text-decoration: underline;
 	}
 
 .sidebar ul {
 	margin: 0;
-	padding: 0;
+	padding: 0 2% 0 2%;
 	}
 
 .sidebar li {
 	line-height: 1.3em;
 	font-family: 'EB Garamond', serif;
 	font-size: 1rem;
-	color: #494947;
+	color: #F6F8FF;
 	display: block; 
 	padding-top: 5px; 
 	margin-bottom: 5px;
 	list-style-type: none;
+	transition: transform 0.3s ease-in-out;
 	}
 
+.sidebar li:hover {
+	transform: scale(1.1);
+}
+
 .sidebar li a:link {
-	color: #0e0e0e;
+	color: #E9FAE3;
 	}
 
 .sidebar li a:visited {
-	color: #444140;
+	color: #fefefe;
 	}
 
-.extra1 {
+
+
+/*.extra1 {
 	background: transparent url('../assets/paradisebeach2.jpg') center no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -232,4 +272,28 @@ footer a:link, footer a:visited {
 	right: 0;
 	width: 100%;
 	height: 10vh;
+	opacity: 70%;
 	}
+*/
+
+.left-bar {
+	position: absolute;
+	height:100%;
+	width:10vh;
+	top: 0;
+	left: 0;
+	background-image: url("../assets/cat1.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	animation: slide 10s infinite;
+}
+
+@keyframes slide {
+	0%, 100% {
+		background-position: top;
+	}
+	50% {
+		background-position: bottom;
+	}
+}
