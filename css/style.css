@@ -16,6 +16,7 @@ html {
 
 header {
 	display: flex;
+	height: 20vh;
 	margin: 0;
 	padding: 0;
 }
@@ -84,8 +85,8 @@ abbr {
 /* specific divs */
 /* Class selector */
 .page-wrapper {
-	padding: 0 175px 0 110px;  
-	margin: 0; 
+	padding: 0 10vw 2vh 10vw;
+	margin-right: 5vw;
 	position: relative;
 	}
 
@@ -97,16 +98,15 @@ abbr {
 /* Descendant combinator */
 header h1 {
 	font-family: 'Island Moments', cursive;
-	font-size: 6rem;
+	font-size:clamp(1rem, 3rem, 6rem);
 	font-weight: bolder;
-	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
 	width: 60%;
 	color: #FFF4EC;
 	margin: 0;
 	padding: 0;
-	}
+}
 
 header h1:hover {
 	color: #E9FAE3;
@@ -114,7 +114,7 @@ header h1:hover {
 
 header h2 {
 	font-family: 'Amatic SC', cursive;
-	font-size: 3rem;
+	font-size:clamp(1rem, 2rem, 3rem);
 	display: flex;
 	justify-content: flex-end;
 	height: 1rem;
@@ -282,11 +282,11 @@ footer a:link, footer a:visited {
 	width:10vh;
 	top: 0;
 	left: 0;
-	background-image: url("../assets/cat1.jpg");
+	background-image: url("../assets/murnie-round.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top;
-	animation: slide 10s infinite;
+	animation: slide 15s infinite;
 }
 
 @keyframes slide {
