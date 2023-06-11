@@ -291,6 +291,16 @@ footer a:link, footer a:visited {
 	animation: slide 15s infinite;
 }
 
+/* For accessibility,giving text contents a background color  */
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+	background-color: #0D2818;
+}
+
 /* add an animation for Murnie to slide up and down on the left side of the page! */
 @keyframes slide {
 	0%, 100% {
