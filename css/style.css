@@ -33,7 +33,7 @@ body::before {
 }
 
 body { 
-	font: 95% georgia, sans-serif;
+	font: 1rem georgia, sans-serif;
 	line-height: 1.88889;
 	color: #FFF4EC;
 	background: #FFF4EC url('../assets/bodybg2.jpg') no-repeat center center fixed;
@@ -133,6 +133,9 @@ header {
 /* General sibling combinator */
 h3 ~ p {
 	font-weight: lighter;
+	font-size: clamp(0.5rem, 1rem, 1.5rem);
+	margin: 0 auto;
+	width: 80%;
 }
 
 /* Id selector */
@@ -152,24 +155,25 @@ h3 ~ p {
 .summary {
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
-	width: 160px; 
+	width: 20vw;
 	float: left;
-	}
+}
 
 .summary p {
 	font-family: 'Gideon Roman', cursive;
+	font-size: 1rem;
 	text-align: center;
-	}
+}
 
 .preamble {
 	clear: right; 
 	padding: 0 10px 0 10px;
-	}
+}
 
 .supporting {	
 	padding-left: 10px; 
 	margin: 0;
-	}
+}
 
 /* Direct sibling combinator */
 .benefits h3 + p {
