@@ -12,7 +12,7 @@
 html {
 	margin: 0;
 	padding: 0;
-	}
+}
 
 header {
 	display: flex;
@@ -41,12 +41,12 @@ body {
 	margin: 0; 
 	padding: 0;
 	position: relative;
-	}
+}
 
 p { 
 	margin-top: 0; 
 	text-align: justify;
-	}
+}
 
 /* Psuedo element selector */
 p::first-letter {
@@ -58,29 +58,29 @@ h3 {
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #FFF4EC;
-	}
+}
 
 /* Psuedo class selector */
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #EA8C55;
-	}
+}
 
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #F2B880;
-	}
+}
 
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
 	color: #C75146;
-	}
+}
 
 abbr {
 	border-bottom: none;
-	}
+}
 
 /* specific divs */
 /* Class selector */
@@ -88,12 +88,12 @@ abbr {
 	padding: 0 10vw 2vh 10vw;
 	margin-right: 5vw;
 	position: relative;
-	}
+}
 
 .intro { 
 	min-width: 470px;
 	width: 100%;
-	}
+}
 
 /* Descendant combinator */
 header h1 {
@@ -120,7 +120,7 @@ header h2 {
 	height: 1rem;
 	width: 40%;
 	color:rgba(219, 207, 176, .9);
-	}
+}
 
 header {
 	padding-top: 2%;
@@ -182,18 +182,18 @@ h3 ~ p {
 
 footer { 
 	text-align: center; 
-	}
+}
 
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
-	}
+}
 
 .sidebar {
 	margin-left: 90vh;
 	position: absolute;
 	top: 0;
 	right: 0;
-	}
+}
 
 /* Child combinator */
 .sidebar > .wrapper {
@@ -219,7 +219,7 @@ footer a:link, footer a:visited {
 	width: 100%;
 	height: 100%;
 	text-decoration: underline;
-	}
+}
 
 .sidebar h3.archives { 
 	font-family: 'EB Garamond', serif;
@@ -227,7 +227,7 @@ footer a:link, footer a:visited {
 	color: #fefefe;
 	margin: 25px 0 5px 0;
 	text-decoration: underline;
-	}
+}
 
 .sidebar h3.resources {
 	font-family: 'EB Garamond', serif;
@@ -235,12 +235,12 @@ footer a:link, footer a:visited {
 	color: #fefefe;
 	margin: 25px 0 5px 0;
 	text-decoration: underline;
-	}
+}
 
 .sidebar ul {
 	margin: 0;
 	padding: 0 2% 0 2%;
-	}
+}
 
 .sidebar li {
 	line-height: 1.3em;
@@ -252,7 +252,7 @@ footer a:link, footer a:visited {
 	margin-bottom: 5px;
 	list-style-type: none;
 	transition: transform 0.3s ease-in-out;
-	}
+}
 
 .sidebar li:hover {
 	transform: scale(1.1);
@@ -260,13 +260,11 @@ footer a:link, footer a:visited {
 
 .sidebar li a:link {
 	color: #E9FAE3;
-	}
+}
 
 .sidebar li a:visited {
 	color: #fefefe;
-	}
-
-
+}
 
 /*.extra1 {
 	background: transparent url('../assets/paradisebeach2.jpg') center no-repeat;
@@ -293,6 +291,7 @@ footer a:link, footer a:visited {
 	animation: slide 15s infinite;
 }
 
+/* add an animation for Murnie to slide up and down on the left side of the page! */
 @keyframes slide {
 	0%, 100% {
 		background-position: top;
