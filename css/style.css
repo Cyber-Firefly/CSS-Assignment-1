@@ -142,7 +142,7 @@ h3 ~ p {
 
 /* Id selector */
 #zen-summary {
-	background-color: #305252;
+	background-color: #354829;
 }
 
 #zen-summary:hover {
@@ -182,8 +182,14 @@ h3 ~ p {
 	font-weight: bold;
 }
 
-footer { 
-	text-align: center; 
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 2em 0;
+	width: 100vw;
+	background-color: #0f1f15;
 }
 
 footer a:link, footer a:visited { 
