@@ -191,51 +191,28 @@ footer a:link, footer a:visited {
 }
 
 .sidebar {
-	margin-left: 90vh;
-	position: absolute;
-	top: 0;
-	right: 0;
+	margin: 0 auto 15vh;
+	display: block;
+	font: 0.8rem verdana, sans-serif;
+	background: transparent url('../assets/jungle1.jpg') no-repeat center center;
+	height:100%;
+	padding: 0 1% 0 1%;
 }
 
 /* Child combinator */
 .sidebar > .wrapper {
-	font: 0.8rem verdana, sans-serif;
-	background: transparent url('../assets/jungle1.jpg') no-repeat center center;
-	height:80vh;
-	width: 10vw;
-	padding: 0 1% 0 1%;
-	border:solid #444140;
-	border-radius: 3px;
-	border-collapse: collapse;
-	position: fixed;
-	top: 10vh;
-	right: 0;
-	overflow: auto;
+	display: flex;
+	justify-content: space-evenly;
 }
 
-.sidebar h3.select { 
-	font-family: 'Island Moments', cursive;
-	font-size: 2rem;
-	color: #fefefe;
-	margin: 10px 0 5px 0;
-	width: 100%;
-	height: 100%;
-	text-decoration: underline;
-}
-
-.sidebar h3.archives { 
+.sidebar h3.select,
+.sidebar h3.archives,
+.sidebar h3.resources
+{
+	display: block;
 	font-family: 'EB Garamond', serif;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: #fefefe;
-	margin: 25px 0 5px 0;
-	text-decoration: underline;
-}
-
-.sidebar h3.resources {
-	font-family: 'EB Garamond', serif;
-	font-size: 1rem;
-	color: #fefefe;
-	margin: 25px 0 5px 0;
 	text-decoration: underline;
 }
 
